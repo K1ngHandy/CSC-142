@@ -1,1 +1,1 @@
-# CSC-142
+# CSC-142 Notes

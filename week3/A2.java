@@ -6,5 +6,6 @@ public class A2 {
         System.out.println("Displacement Calculation");
         // displacement = speed * time
         // s = so + vo t + 1/2 at2
+
     }
 }
