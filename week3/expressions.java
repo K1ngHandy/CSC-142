@@ -18,20 +18,20 @@ public class expressions {
         String str10 = 1 + 1 + 1 + "1" + 1 + 1 + 1;
         String str11 = 4 - 1 + "abc";
 
-        // System.out.println(str1);
-        // System.out.println(str2);
-        // System.out.println(dbl1);
-        // System.out.println(dbl2);
-        // System.out.println(dbl3);
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(dbl1);
+        System.out.println(dbl2);
+        System.out.println(dbl3);
 
-        System.out.println(str3);
-        System.out.println(str4);
-        System.out.println(str5);
-        System.out.println(str6);
-        System.out.println(str7);
-        System.out.println(str8);
-        System.out.println(str9);
-        System.out.println(str10);
-        System.out.println(str11);
+        // System.out.println(str3);
+        // System.out.println(str4);
+        // System.out.println(str5);
+        // System.out.println(str6);
+        // System.out.println(str7);
+        // System.out.println(str8);
+        // System.out.println(str9);
+        // System.out.println(str10);
+        // System.out.println(str11);
     }
 }
