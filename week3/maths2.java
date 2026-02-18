@@ -21,4 +21,5 @@ public class maths2 {
         System.out.println("Question 15");
         System.out.println(89 % 10 / 4 * 2.0 / 5 + (1.5 + 1.0 / 2) * 2);
     }
+
 }
