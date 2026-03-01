@@ -5,13 +5,16 @@ public class AsciiFigure {
 
     public static void main(String[] args) {
         for (int i = 1; i <= SIZE; i++) {
-            for (int j = 1; j <= -4 * i + 20; j++) {
+            // "/"
+            for (int j = 1; j <= 4 * (SIZE - i); j++) {
                 System.out.print("/");
             }
-            for (int k = 1; k <= 6 * i - 4; k++) {
+            // "*"
+            for (int j = 1; j <= 8 * (i - 1); j++) {
                 System.out.print('*');
             }
-            for (int l = 1; l <= -4 * i + 20; l++) {
+            // "\"
+            for (int j = 1; j <= 4 * (SIZE - i); j++) {
                 System.out.print("\\");
             }
             System.out.println();
