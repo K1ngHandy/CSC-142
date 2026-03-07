@@ -10,7 +10,6 @@ Programs introducing fundamental Java syntax and output.
 - **[Hello.java](week2/Hello.java)** - Classic "Hello, World!" program
 - **[Main.java](week2/Main.java)** - ASCII art using string repetition ("FEAR THE TREE!")
 - **[Print.java](week2/Print.java)** - Demonstrates calling another class's main method
-- **[Ex2.java](week2/Ex2.java)** - Empty class template
 
 ### Week 3: Expressions, Variables & Data Types
 Programs exploring Java arithmetic, expressions, variables, and data type behavior.
@@ -34,6 +33,27 @@ Programs exploring Java arithmetic, expressions, variables, and data type behavi
 
 #### Reference Notes
 - **[notes.java](week3/notes.java)** - Comments listing Java's 8 primitive data types
+
+### Week 5: Intro Problems & Practice
+Early practice problems focused on methods, output, and simple logic.
+
+- **[A3.java](week5/A3.java)**
+- **[Ex2.java](week5/Ex2.java)**
+
+### Week 6: Loops, Patterns & Nested Iteration
+Programs focused on `for` loops, nested loops, and console pattern output.
+
+- **Pattern / shape output**: `AsciiFigure.java`, `Mirror.java`, `starsPrint.java`, `nestedStarsOutput.java`, `floydsTriangle.java`
+- **Loop drills**: `forLoops.java`, `loopMysteryPrint1.java`, `sequenceOfNumbers.java`, `tableOutput.java`
+- **Number loop exercises**: `numberLoops1.java`, `numberLoops2.java`, `numberLoops3.java`, `numberLoops4constant.java`
+- **Examples / misc**: `Example.java`, `Example3.java`, `Ex9.java`, `Ex10.java`, `Scope.java`, `bottlesOfRootBeer.java`
+
+### Week 7: Methods, Parameters & Return Values
+Programs introducing parameter passing, return values, and small computational methods.
+
+- **Computation methods**: `averageOf3.java`, `circleArea.java`, `computeDistance.java`, `factorial.java`, `getLastDigit.java`, `sumOfRange.java`, `printPay.java`
+- **Output / geometry**: `boxOfStars.java`, `triangle.java`, `OneTwoThree.java`, `Hogwarts.java`
+- **Parameter/return tracing**: `ParameterMystery1.java`, `ParameterMysteryExam3.java`, `ParameterMysteryExam4.java`, `ParameterMysteryExam5.java`, `ParameterMysterySection1.java`, `ParameterMysterySection2.java`, `ReturnMystery1.java`, `MysteryGhost.java`
 
 ## 📚 Key Concepts Covered
 
@@ -59,15 +79,27 @@ Programs exploring Java arithmetic, expressions, variables, and data type behavi
 - Using appropriate data types for scientific calculations
 - Documenting formulas with comments and units
 
+### Loops & Pattern Generation
+- Basic and nested `for` loops
+- Counting and sequence construction
+- Text/ASCII shape generation using loops
+
+### Methods & Parameters
+- Writing methods with parameters
+- Returning computed values
+- Tracing method calls and argument passing
+
 ## 🚀 Running the Programs
 
-Each program can be compiled and run using:
+Because this repo includes both packaged and non-packaged classes, use one of these patterns from the repository root:
+
+### Option 1: Non-packaged files (for example, `week2/Hello.java`)
 ```bash
-javac week#/FileName.java
-java week#.FileName
+javac week2/Hello.java
+java -cp week2 Hello
 ```
 
-Example:
+### Option 2: Packaged files (for example, `week3/A2.java` with `package week3;`)
 ```bash
 javac week3/A2.java
 java week3.A2
