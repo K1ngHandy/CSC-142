@@ -5,13 +5,18 @@ import java.util.Scanner;
 public class AddCommas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Input number string: ");
+        System.out.print("Input number string: ");
         String number = sc.next();
 
-        addCommas("12345678");
+        System.out.println(addCommas(number));
+        sc.close();
     }
 
-    public static void addCommas(String number) {
-        System.out.println(number.substring(number.length() - 3));
+    public static String addCommas(String number) {
+        StringBuilder sb = new StringBuilder(number);
+        for (int i = sb.length() - 3; i > 0; i -= 3) {
+            sb.insert(1, ",");
+        }
+        return sb.toString();
     }
 }
