@@ -13,6 +13,7 @@ public class IsRotation {
     }
 
     public static boolean isRotation(String str1, String str2) {
+        // check rotation similarity
         return str1 != null && str2 != null && str1.length() == str2.length()
                 && (str1.toLowerCase() + str1.toLowerCase()).contains(str2.toLowerCase());
     }
