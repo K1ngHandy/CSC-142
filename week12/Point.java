@@ -5,13 +5,12 @@ public class Point {
     public int y;
 
     public void translate(int dx, int dy) {
-        // this is current instance of the class, so we can use this to refer to the
-        // current instance variables
+        // this is current instance of the class
         this.x += dx;
         this.y += dy;
     }
 
     public double distanceFrom(Point p) {
-        //
+        return Math.sqrt((this.x - p.x) * (this.x - p.x) + (this.y - p.y) * (this.y - p.y));
     }
 }

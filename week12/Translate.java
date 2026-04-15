@@ -11,5 +11,7 @@ public class Translate {
         p2.x = 30;
         p2.y = 40;
         p2.translate(50, -50);
+
+        System.out.println(p1.distanceFrom(p2));
     }
 }
