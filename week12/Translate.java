@@ -12,6 +12,7 @@ public class Translate {
         p2.y = 40;
         p2.translate(50, -50);
 
-        System.out.println(p1.distanceFrom(p2));
+        System.out.println("Distance between points: " + p1.distanceBetween(p2));
+        System.out.println("Distance from origin: " + p1.distanceFromOrigin());
     }
 }
