@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class ArrayMysteryExam4 {
     public static void main(String[] args) {
-        int[] a = {};
+        // int[] a = { 6, 2, 4 };
+        // int[] a = { 4, 2, 3, 1, 2, 5 };
+        int[] a = { 6, 0, -1, 3, -2, 0, 4 };
 
         arrayMysteryExam4(a);
     }
