@@ -1,8 +1,13 @@
 package week13;
 
+import java.util.Arrays;
+
 public class ArrayMystery {
     public static void main(String[] args) {
-        System.out.println(arrayMystery());
+        int[] list = { 1, 2, 3, 4, 5 };
+        System.out.println("Before: " + Arrays.toString(list));
+        arrayMystery(list);
+        System.out.println("After:  " + Arrays.toString(list));
     }
 
     public static void arrayMystery(int[] list) {
