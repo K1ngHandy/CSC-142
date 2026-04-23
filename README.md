@@ -128,8 +128,31 @@ Non-class files:
 - `DimensionalArrays.java`
 - `Ex.java`
 - `Ex2.java`
+- `IPod.java`
+- `Point.java`
 - `Question.java`
 - `QuickArray.java`
+- `Translate.java`
+
+### `week13`
+- `ArrayMystery.java`
+- `ArrayMystery2.java`
+- `ArrayMystery3.java`
+- `ArrayMysteryExam2.java`
+- `ArrayMysteryExam4.java`
+- `ArrayMysteryExam5.java`
+- `ArrayMysteryExam6.java`
+- `ArrayReferenceMystery.java`
+- `Banish.java`
+- `Collapse.java`
+- `Contains.java`
+- `CopyRange.java`
+- `CountDuplicates.java`
+- `LargestDistance.java`
+- `Point.java`
+
+### `week14`
+- `Vehicle.java`
 
 ## Notes
 
