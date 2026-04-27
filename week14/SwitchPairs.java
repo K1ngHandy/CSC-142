@@ -7,7 +7,14 @@ public class SwitchPairs {
         switchPairs(a);
     }
 
-    public static String[] switchPairs() {
-        //
+    public static int[] switchPairs() {
+        int[] switch = new String[a.length];
+
+        for (int i = 0; i < a.length; i++) {
+            switch[i] = a[i + 1];
+            switch[i + 1] = a[i];
+        }
+
+        return switch
     }
 }
