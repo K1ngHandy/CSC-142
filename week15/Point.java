@@ -1,28 +1,28 @@
 package week15;
 
-public class PointErrors {
+public class Point {
     private int x; // Each Point object has
     private int y; // an int x and y inside.
 
     // Constructor
-    public void PointErrors(int initX, int initY) {
-        initX = x;
-        initY = y;
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     // These accessors return the Point's x and y coordinates.
     public int getX() {
-        return y;
+        return this.x;
     }
 
     public int getY() {
-        return x;
+        return this.y;
     }
 
     // Shifts this point's x/y by the given amounts.
     public void translate(int dx, int dy) {
-        int x = x + dx;
-        int y = y + dy;
+        this.x = this.x + dx;
+        this.y = this.y + dy;
     }
 
     // Returns this point's distance from (0, 0).
@@ -32,7 +32,11 @@ public class PointErrors {
 
     // A string version of the Point that is suitable for printing.
     public String toString() {
-        System.out.print("(" + x + ", " + y + ")");
-        return "?";
+        return "(" + x + ", " + y + ")";
+    }
+
+    public static void main(String[] args) {
+        Point p = new Point(4, 3);
+        System.out.println(p.toString());
     }
 }
