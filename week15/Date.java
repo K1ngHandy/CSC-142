@@ -28,17 +28,23 @@ public class Date {
         return this.m;
     }
 
-    public int nextDay() {
-        this.d = this.d + 1;
-        return this.d;
+    public void nextDay() {
+        if (this.d < daysInMonth()) {
+            this.d++;
+        } else {
+            this.d = 1;
+            if (this.m < 12) {
+                this.m++;
+            } else {
+                this.m = 1;
+            }
+        }
     }
 
     public String toString() {
-        if (this.d < 10) {
-            return "0" + this.m + "/" + this.d;
-        } else {
-            return this.m + "/" + this.d;
-        }
+        String mm = (this.m < 10 ? "0" : "") + this.m;
+        String dd = (this.d < 10 ? "0" : "") + this.d;
+        return mm + "/" + dd;
     }
 
     public static void main(String[] args) {
