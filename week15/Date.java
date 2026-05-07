@@ -41,6 +41,12 @@ public class Date {
         }
     }
 
+    public int absoluteDay() {
+        int dayOfYear = 0;
+        dayOfYear += this.d + ;
+        return dayOfYear;
+    }
+
     public String toString() {
         String mm = (this.m < 10 ? "0" : "") + this.m;
         String dd = (this.d < 10 ? "0" : "") + this.d;
