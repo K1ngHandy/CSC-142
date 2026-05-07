@@ -30,15 +30,21 @@ public class Clock {
     public int advance(int minute) {
         int totalMins = this.minute + minute;
         int addHours = totalMins / 60;
-        this.minute = totalMins % 60;
+        int newMinute = totalMins % 60;
 
-        this.hour += addHours;
+        int hoursToAdd = this.hour % 12;
+        int totalHours = hoursToAdd + addHours;
 
-        while (this.hour > 12) {
-            this.hour -= 12;
+        int toggle = totalHours / 12;
+        int newHours = totalHours % 12;
+        int newHour = (newHours == 0) ? 12 : newHours;
+
+        if (toggle % 2 == 1) {
             this.amPm = this.amPm.equals("AM") ? "PM" : "AM";
         }
 
+        this.hour = newHour;
+        this.minute = newMinute;
         return this.minute;
     }
 
