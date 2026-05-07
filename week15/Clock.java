@@ -42,8 +42,16 @@ public class Clock {
         return this.minute;
     }
 
+    public boolean isWorkTime() {
+        if (this.amPm.equals("AM")) {
+            return this.hour >= 9 && this.hour <= 11;
+        } else {
+            return this.hour == 12 || (this.hour >= 1 && this.hour <= 4) || (this.hour == 5 && this.minute == 0);
+        }
+    }
+
     public static void main(String[] args) {
-        Clock time = new Clock(6, 27, "PM");
+        Clock time = new Clock(4, 59, "PM");
         System.out.println(time.toString());
 
         time.advance(1); // 6:28 PM
@@ -51,16 +59,7 @@ public class Clock {
         time.advance(30); // 6:58 PM
         System.out.println(time.toString());
         time.advance(5); // 7:03 PM
-        System.out.println(time.toString());
-        time.advance(60); // 8:03 PM
-        System.out.println(time.toString());
-        time.advance(128); // 10:11 PM
-        System.out.println(time.toString());
-        time.advance(180); // 1:11 AM
-        System.out.println(time.toString());
-        time.advance(1440); // 1:11 AM (1 day later)
-        System.out.println(time.toString());
-        time.advance(21075); // 4:26 PM (2 weeks later)
-        System.out.println(time.toString());
+
+        System.out.println(time.isWorkTime());
     }
 }
